@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>My Listings</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,8 +17,29 @@
     <!-- Custom CSS -->
     <style>
     body {
+
         padding-top: 70px;
+
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+
+    .backgroundImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Pics/Background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    opacity: 0.7;
+    filter:alpha(opacity=80);
+    z-index = -1;
+}
+
+    .logo{
+        z-index: 1; 
     }
     </style>
         <style>
@@ -30,8 +51,6 @@
 
 
 
-     <a href = "/index.html"> <img src="Pics/Logo.jpg" alt="Logo" style="width:89px;height:117px;"> </a>
-
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,12 +61,20 @@
 </head>
 
 <body>
+<div class="backgroundImg"></div>
 
+
+
+
+         <div class="logo">
+     <a href = "/index.html"> <img src="Pics/Logo.jpg" alt="Logo" style="width:89px;height:117px;"> </a>
+        </div>
+        
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
-           <div align=" right"> <a href = "/signout.html"> <font size = "5" color = "white" > Sign Out </font></a> </div>
+           <div align="right"> <a href = "/signout.html"> <font size = "5" color = "white" > Sign Out </font></a> </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
@@ -63,18 +90,46 @@
             <div>
                 <table align ="center" style="width:70%">
                 <tr>
-                    <th><center><a href = "/profile.html"><font color = "black"> Profile</font></a></center></th>
-                    <th><center><a href = "/Saved.html"><font color = "black">Saved Listings</font></a></center></th>
-                    <th><center><a href = "/Preference.html"><font color = "black">Preference</font></a></center></th>
-                    <th><center><a href = "/Inbox.html"><font color = "black">Inbox</font></a></center></th>
+                    <th bgcolor ="white"><center><a href = "/profile.html"><font color = "black"> Profile</font></a></center></th>
+                    <th bgcolor ="white"><center><a href = "/Saved.html"><font color = "black">Saved Listings</font></a></center></th>
+                    <th bgcolor ="white"><center><a href = "/Preference.html"><font color = "black">Preference</font></a></center></th>
+                    <th bgcolor ="white"><center><a href = "/Inbox.html"><font color = "black">Inbox</font></a></center></th>
                     <th bgcolor ="lightblue"><center><a href = "/MyListings.html"><font color = "black">My Listings</font></a></center></th>
                 </tr>
             </table>
             <div>
         <hr>
+<br />
+<br />
+<br />
+
+
+
+        <table align = "center" style="width:20%">
+        <tr>
+            <th bgcolor ="lightblue"><center><a href = "/PostNewListing.html"><font color = "black">Post New Listing</font></a></center></th>
+        </tr>
+        </table>
+        <br />
+        <br />
 
              
             </div>
+
+            <p></p>
+
+
+            <div class = "row">
+            <div class = "col-lg-12 text-center">
+            <table align = "center">
+                <tr>
+                    <th><img src="Pics/WhiteHouse.jpg" alt="WhiteHouse" style="width:500px;height:250px;" ></th>
+                    <th>Barack Obama</th>
+                </tr>
+                </table>
+            </div>
+            </div>
+
         </div>
         <!-- /.row -->
 
